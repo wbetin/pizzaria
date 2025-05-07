@@ -25,7 +25,7 @@ const FinishOrderController_1 = require("./controllers/order/FinishOrderControll
 const multer_2 = __importDefault(require("./config/multer"));
 const router = (0, express_1.Router)();
 exports.router = router;
-const upload = (0, multer_1.default)(multer_2.default.upload('./tmp'));
+const upload = (0, multer_1.default)(multer_2.default.upload('/tmp'));
 //ROTAS USER
 router.post('/users', new CreateUserController_1.CreateUserController().handle);
 router.post('/session', new AuthUserController_1.AuthUserController().handle);
